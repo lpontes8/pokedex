@@ -70,6 +70,6 @@ async function fetchPokemon(url, pokemon) {
 
 searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    fetchPokemon(apiUrl, searchInput.value);
+    fetchPokemon(apiUrl, searchInput.value.toLowerCase());
     searchInput.value = '';
 });
