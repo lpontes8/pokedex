@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('./images/pexels-archie-binamira-672358.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    font-size: 1.3rem;
+}
+
+header {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+header span {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    box-shadow: 0 0 1em rgba(255, 255, 255, 0.4);
+    width: 90%;
+    text-transform: capitalize;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    align-self: center;
+    border-radius: 0.5rem;
+}
+
+.search input {
+    font-family: inherit;
+    padding-left: 0.5rem;
+    width: 60%;
+    height: 30px;
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.search button {
+    height: 30px;
+    width: 30px;
+    border: none;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.all-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sprite-container,
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pokemon-sprite {
+    width: 200px;
+    height: 200px;
+
+    transition: all 1s ease;
+}
+
+#pokemon-sprite:hover {
+    width: 300px;
+    height: 300px;
+}
+
+.info-container {
+    width: 100%;
+}
+
+.info-container table {
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.info-container table th,
+td {
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.info-container tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.info-container li {
+    list-style-type: none;
+}
+
+.moves-cell {
+    overflow: auto;
+    max-height: 200px;
+}
+
+@media (max-width: 600px) {
+    .all-container {
+        flex-direction: column;
+    }
+}
