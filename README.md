@@ -1,5 +1,3 @@
-pokedex
-
 A pokedex using PokeApi https://pokeapi.co/.
 
 Responsive Design.
